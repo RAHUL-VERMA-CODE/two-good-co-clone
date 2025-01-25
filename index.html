@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/icon.jpg">
-    <link rel="locomotive-scroll" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js" defer></script>
+    <!-- <link rel="locomotive-scroll" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js" defer></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" defer></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="script.js" defer></script>
     <title>Two Good Co</title>
 </head>
 <body>
     <div class="main  container">
+      <div class="cursor"></div>
       <!-- ===============page1====================== -->
         <div id="page1" >
        <h1>Change </h1>
@@ -64,7 +67,7 @@
         </div>
       </div>
          
-      <div class="page3-item1">
+      <div class=" cursor-effect page3-item2">
         <div class="child" id="child3">
           <div>
             <img src="./assets/img1.avif" alt="product-img">
@@ -87,11 +90,31 @@
 
       </div>
 
-      <!-- <div class="line-container">
+       <div class="line-container line-margin-top">
         <p>Words of Goodness</p>
         <p>Messages of Love & Support</p>
        </div>
-       <hr class="line"> -->
+       <hr class="line line-margin"> 
+
+       <div class="page4"></div>
+
+       <div class="page5">
+        <div class="page5-item1">
+         <h2> OUR IMPACT </h2>
+         <p class="para1">The thing is, we don't save anyone.</p>
+         <p class="para2">What we do is provide a safe space for women to change the course of their own lives.</p>
+         <p class="para3">After many years of living in crisis, abuse and complex trauma, restoring self-worth is foundational for independence. We believe that through experiences that promote love and respect, we can spark and nurture a sense of self-worth for those on the path of healing.</p>
+         <button class="btn1"><a href="" class="btn">HERE'S HOW WE DO IT</a></button>
+        </div>
+        <div class="page5-item2">
+          <div class="img-container">
+            <img src="./assets/Christina-Maria-Jes-Lindsay.avif" alt="">
+          </div>
+          <div class="img-container">
+            <img src="./assets/Patricia-Work-Work-Good-Stories-Two-Good-Co.avif" alt="">
+          </div>
+        </div>
+       </div>
     </div>
 </body>
 </html>

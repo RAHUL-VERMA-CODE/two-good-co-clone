@@ -1,8 +1,13 @@
+// Initialize Lenis
+const lenis = new Lenis();
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('.main'),
-    smooth: true
-});
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
 
 const videoContainer=document.querySelector(".video-container")
 const PlayBtn=document.querySelector(".play");
@@ -45,3 +50,20 @@ function loadingAnimation(){
 
 }
 loadingAnimation();
+
+document.addEventListener("mousemove",(dets)=>{
+   gsap.to(".cursor",{
+    left:dets.x,
+    top:dets.y
+   })
+})
+document.querySelector(".cursor-effect").addEventListener("mouseenter",()=>{
+    gsap.to(".cursor",{
+        transform:` translate(-50%,-50%) scale(1)`,
+    })
+})
+document.querySelector(".cursor-effect").addEventListener("mouseleave",()=>{
+    gsap.to(".cursor",{
+        transform:` translate(-50%,-50%) scale(0)`
+    })
+})
