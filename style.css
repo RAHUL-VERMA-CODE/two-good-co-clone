@@ -169,9 +169,32 @@ body{
     z-index: 9;
     border-radius:40px;
     color: #000;
+    cursor: pointer;
+ }
+ .dets-container{
+   display: flex;
+   justify-content: space-around;
+   padding-top: 2rem;
+   font-family: helvetica;
+ }
+ .dot{
+   padding: 0.5rem;
+   height: 0.5rem;
+   width: 0.5rem;
+   background-color: black;
+   border-radius: 50%;
+ }
+ .dets-container p{
+   font-size: 1.3rem;
+ }
+ .dets-container h2{
+     font-size: 1.4rem;
+ }
+ .dets-container i{
+   font-size: 1.3rem;
  }
  #bg-color1{
-    background-color: #face88;
+    background-color: #fec76f;
  }
  #bg-color2{
     background-color: #71a3c1;
@@ -186,6 +209,60 @@ body{
     object-fit: cover;
     scale: 1.1;
  }
+
+.content1{
+   display: none;
+   width: 75%;
+   position: absolute;
+   top:48%;
+   z-index: 8;
+   border-radius: 10px 10px 20px 20px;
+   background-color: #fec76f;
+   transition: width 0.5s ease-in-out;
+}
+.content2{
+   display: none;
+   width: 75%;
+   position: absolute;
+   top:48%;
+   z-index: 8;
+   border-radius: 10px 10px 20px 20px;
+background-color: #71a3c1;
+}
+.content3{
+   display: none;
+   width: 75%;
+   position: absolute;
+   top:48%;
+   z-index: 8;
+   border-radius: 10px 10px 20px 20px;
+  background-color: white;
+}
+.product-container{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+}   
+.product-image-container{
+   /* width: 100%; */
+   padding-top:5.1rem;
+   padding-right: 1.5rem ;
+}
+.product-content-container p{
+  text-align: center;
+  font-size: 1.25rem;
+  font-family:helvetica ;
+  text-transform: uppercase;
+  padding: 1rem 0.5rem;
+}
+.product-item1{
+   width: 50%;
+}
+.product-item2{
+   width: 50%;
+}
+
+
  /* =============page3 styling============= */
  #page3{
     height: 120vh;
@@ -331,6 +408,7 @@ body{
    font-size: 2.5rem;
    font-family:  Helvetica;
    font-weight: 750;
+   padding-left: 1rem;
 }
 .page6-item1 input {
    padding: 3rem 0;
@@ -374,12 +452,21 @@ padding: 2.8rem;
 .about1 p{
   font-size: 1.6rem;
   padding: 0.2rem 0;
+  cursor: pointer;
 }
 .about2 p{
    font-size: 1.6rem;
    padding: 0.2rem 0;
+   cursor: pointer;
 }
-
+.about1 p:hover{
+   color: #555;
+   text-decoration: underline;
+}
+.about2 p:hover{
+   color: #555;
+   text-decoration: underline;
+}
 .logo-container{
    width:30%;
 }
@@ -426,14 +513,19 @@ padding: 2.8rem;
       justify-content: space-between; 
    } 
    .item{
-      min-height: 125vh;
+      min-height: 75vh;
          width: 100%;
      }
      .item-container .item img{
         height: 100%;
         width:100%;
-       
      }  
+     .item .dets{
+      width:40%;
+     }
+     .content-container{
+      width: 54.5%;
+     }
    #child1{
       height: 20vh;
      width:100%;
@@ -483,6 +575,9 @@ padding: 2.8rem;
    }
  }
  @media (max-width:600px) {
+   .item .dets{
+      width:70%;
+     }
    .nav-item li a{
       display: none;
    }
@@ -514,6 +609,10 @@ padding: 2.8rem;
       width:100%;
      
    }   
+   .content-container{
+      width: 70%;
+      border-radius: 20px 20px 20px 20px;
+     }
    #page3{
     height:80vh;
     width:100%;

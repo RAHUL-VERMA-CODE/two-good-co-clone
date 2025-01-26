@@ -68,4 +68,37 @@ document.querySelector(".cursor-effect").addEventListener("mouseleave",()=>{
     })
 })
 
+const Content1=document.querySelector(".content1")
+const Content2=document.querySelector(".content2")
+const Content3=document.querySelector(".content3")
+const DETS=document.querySelector(".dets1");
+console.log(DETS)
+ 
+DETS.addEventListener("mouseenter",()=>{
+    Content1.style.display="block";
+});
+DETS.addEventListener("mouseleave",()=>{
+    Content1.style.display="none";
+})
+
+
+const DETS2=document.querySelector(".dets2");
+console.log(DETS)
+ 
+DETS2.addEventListener("mouseenter",()=>{
+    Content2.style.display="block";
+});
+DETS2.addEventListener("mouseleave",()=>{
+    Content2.style.display="none";
+})
+
+const DETS3=document.querySelector(".dets3");
+console.log(DETS)
+ 
+DETS3.addEventListener("mouseenter",()=>{
+    Content3.style.display="block";
+});
+DETS3.addEventListener("mouseleave",()=>{
+    Content3.style.display="none";
+})
 
