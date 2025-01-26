@@ -67,3 +67,5 @@ document.querySelector(".cursor-effect").addEventListener("mouseleave",()=>{
         transform:` translate(-50%,-50%) scale(0)`
     })
 })
+
+

@@ -18,6 +18,54 @@ body{
 .container{
     padding: 0 3vw;
 }
+.navbar{
+   /* height: 8.5rem; */
+   width:100%;
+   /* background-color: #face88cc; */
+   position: fixed;
+   z-index: 99;
+}
+.svg{
+   padding: 1rem 0;
+}
+.nav-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.nav-items{
+   display: flex;
+}
+.nav-icon i{
+   font-size: 2rem;
+   cursor: pointer;
+}
+.nav-icon{
+   padding: 0.8rem 1.7rem;
+   border-radius: 50px;
+   background-color: #fff;
+}
+.nav-icon .cart{
+   padding-left:2rem ;
+}
+.nav-item{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.nav-item li{
+   list-style: none;
+}
+.nav-item li:hover{
+   text-decoration: underline;
+}
+.nav-item li a{
+   font-size: 1.5rem;
+   text-decoration: none;
+   padding-right:2.5rem;
+   color: #000;
+   font-family:helvetica;
+}
 .cursor{
    height: 20rem;
    width:20rem;
@@ -36,7 +84,7 @@ body{
     min-height: 100vh;
     width: 100%;
     position: relative;
-   padding-top: 15vh;
+   padding-top: 40vh;
 }
 
 #page1 h1{
@@ -227,6 +275,7 @@ body{
    margin-bottom: 5rem;
  }
  .line-margin-top{
+   padding-top: 10rem;
    font-size: 1.1rem;
  }
  /* ===============page4 styling================= */
@@ -267,13 +316,124 @@ body{
 .para2{
    padding: 3rem 0;
 }
+/* ===================page6======================== */
+.page6{
+   min-height: 100vh;
+   font-family:  Helvetica;
+}
+.page6-item1{
+   margin-top:10rem  ;
+   display: flex;
+   align-items: center;
+}
+.page6-item1 input::placeholder{
+   color: #000;
+   font-size: 2.5rem;
+   font-family:  Helvetica;
+   font-weight: 750;
+}
+.page6-item1 input {
+   padding: 3rem 0;
+   width: 100%;
+   text-decoration: none;
+   outline: 0;
+   border: 0;
+   color: #000;
+   font-size: 2rem;
+}
+.input-div{
+   width: 95%;
+}
+.icon-div{
+width:10%;
+background-color: #fff;
+padding: 2.8rem;
+}
+.sendbtn{
+   font-size: 3rem;
+   cursor: pointer;
+}
+.page6-item2{
+   margin: 3rem 0;
+   display: flex;
+   justify-content: space-between;
+}
+.head{
+ font-size: 1.5rem;
+ color: #555;
+ padding-bottom: 3rem;
+}
+.head::selection{
+   background-color:gray;
+   color: #fff;
+}
+.page6 p{
+   font-size: 1.25rem;
+   color:black;
+}
+.about1 p{
+  font-size: 1.6rem;
+  padding: 0.2rem 0;
+}
+.about2 p{
+   font-size: 1.6rem;
+   padding: 0.2rem 0;
+}
 
+.logo-container{
+   width:30%;
+}
+.logo-container img{
+   width: 100%;
+   height: 100%;
+   border-radius: 30px;
+   /* display: none; */
+}
+.page6-item3{
+   padding: 5rem ;
+   text-align: center;
+}
+.page6-item1 input::placeholder{
+   color: #000;
+   font-size: 1.3rem;
+   font-family:  Helvetica;
+}
+.res-logo{
+   height: 10rem;
+   width:10rem;
+   margin-top: 4rem;
+}
+.res-logo img{
+   width:100%;
+   height: 100%;
+   display: none;
+}
+.footer-text{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 5rem;
+}
  /* ===================responsibe styling============== */
 
  @media (max-width:1000px) {
    .page3-item1{
       flex-direction: column;
    }
+   .item-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+   } 
+   .item{
+      min-height: 125vh;
+         width: 100%;
+     }
+     .item-container .item img{
+        height: 100%;
+        width:100%;
+       
+     }  
    #child1{
       height: 20vh;
      width:100%;
@@ -305,8 +465,27 @@ body{
    .img-container{
       height:60vh;
    }
+   .line-margin-top{
+      padding-top: 1rem;
+    }
+    .res-logo img{
+      display:block;
+   }
+   .logo-container img{
+      display: none;
+   }
+   .about2{
+      padding-right: 2rem;
+   }
+   .page6-item3{
+      padding: 2rem;
+      text-align: start;
+   }
  }
  @media (max-width:600px) {
+   .nav-item li a{
+      display: none;
+   }
    #page1{
       min-height: 70vh;
       width: 100%;
@@ -323,10 +502,9 @@ body{
  
      .item-container{
       display: flex;
-      /* align-items: center; */
       flex-direction: column;
       justify-content: space-between; 
-   }
+   } 
    .item{
     height: 50vh;
        width: 100%;
@@ -392,4 +570,8 @@ body{
  .img-container{
     height:20vh;
  }
+ .head{
+   font-size: 1.2rem;
+ }
 }
+
