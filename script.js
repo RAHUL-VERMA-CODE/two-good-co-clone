@@ -44,10 +44,31 @@ function loadingAnimation(){
     gsap.from("#page1 .video-container",{
         scale:0.9,
         opacity:0,
-        delay:1.3,
+        delay:1.5,
         duration:0.3
     })
+    gsap.from(".menu-items li ",{
+        y:50,
+        opacity:0,
+        delay:0.3,
+        duration:0.9,
+        stagger:0.2
+    })
 
+    gsap.from(".about-container h3 ",{
+        y:50,
+        opacity:0,
+        delay:0.3,
+        duration:0.9,
+        stagger:0.2
+    })
+    gsap.from(".about-container p",{
+        y:100,
+        opacity:0,
+        delay:0.3,
+        duration:0.9,
+        stagger:0.2
+    })
 }
 loadingAnimation();
 
@@ -102,3 +123,17 @@ DETS3.addEventListener("mouseleave",()=>{
     Content3.style.display="none";
 })
 
+const navContainer=document.querySelector(".nav-container2");
+const hameBurger=document.querySelector("#hamburger");
+const cross=document.querySelector("#cross");
+hameBurger.addEventListener("click",()=>{
+    navContainer.style.display="block";
+    hameBurger.style.display="none";
+    cross.style.display="block";
+    // navContainer.style.transform=`translateY(0%)`
+})
+cross.addEventListener("click" ,()=>{
+    navContainer.style.display="none";
+    hameBurger.style.display="block";
+    cross.style.display="none";
+})
