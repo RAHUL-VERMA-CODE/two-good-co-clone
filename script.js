@@ -126,14 +126,17 @@ DETS3.addEventListener("mouseleave",()=>{
 const navContainer=document.querySelector(".nav-container2");
 const hameBurger=document.querySelector("#hamburger");
 const cross=document.querySelector("#cross");
+const websiteLogo=document.querySelector(".website-logo img")
 hameBurger.addEventListener("click",()=>{
     navContainer.style.display="block";
     hameBurger.style.display="none";
     cross.style.display="block";
+    websiteLogo.style.display="block";
     // navContainer.style.transform=`translateY(0%)`
 })
 cross.addEventListener("click" ,()=>{
     navContainer.style.display="none";
     hameBurger.style.display="block";
     cross.style.display="none";
+      websiteLogo.style.display="none";
 })

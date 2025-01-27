@@ -125,7 +125,17 @@ body{
    color: #555;
 }
 
-
+.website-logo{
+   position:absolute;
+   height: 15rem;
+   width:15rem;
+   z-index: 999;
+}
+.website-logo img{
+   height: 100%;
+   display: none;
+   border-radius: 50%;
+}
 .cursor{
    height: 20rem;
    width:20rem;
